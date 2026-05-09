@@ -23,13 +23,13 @@ A p-value alone won't tell you which mistake is cheaper to make. That's what thi
 
 Starting from 5,500 observations of projected insurance losses (simulated data), the analysis runs through:
 
-1. **EDA** — the loss data is right-skewed and heavy-tailed, so normal distribution assumptions are out from the start
-2. **Distribution fitting** — Gamma, Weibull, and Lognormal are tested via KS-test; Lognormal wins
-3. **Hypothesis testing** — one-sample right-tailed t-test to check whether mean losses have significantly exceeded the historical benchmark
-4. **Cost matrix** — CFP and CFN are defined based on customer count and per-unit financial impact
-5. **Monte Carlo simulation** — 10,000 scenarios generated from the fitted Lognormal distribution, each run through the same hypothesis test and cost classification
-6. **VaR & TVaR at 95%** — tail risk measured separately for "raise premium" vs "keep premium" decisions
-7. **Final recommendation** — if TVaR under inaction exceeds TVaR under action, raising the premium is the safer call
+1. **EDA**  the loss data is right-skewed and heavy-tailed, so normal distribution assumptions are out from the start
+2. **Distribution fitting**  Gamma, Weibull, and Lognormal are tested via KS-test; Lognormal wins
+3. **Hypothesis testing**  one-sample right-tailed t-test to check whether mean losses have significantly exceeded the historical benchmark
+4. **Cost matrix**  CFP and CFN are defined based on customer count and per-unit financial impact
+5. **Monte Carlo simulation**  10,000 scenarios generated from the fitted Lognormal distribution, each run through the same hypothesis test and cost classification
+6. **VaR & TVaR at 95%**  tail risk measured separately for "raise premium" vs "keep premium" decisions
+7. **Final recommendation**  if TVaR under inaction exceeds TVaR under action, raising the premium is the safer call
 
 ---
 
