@@ -47,9 +47,9 @@ The asymmetry here is intentional. It reflects a real tradeoff: short-term reput
 ## Project Structure
 
 ```
-├── premium_pricing_framework.ipynb       # main notebook
-├── simulasi_pricing_premi_5500_obs.xlsx  # dataset
-└── README.md
+├── 5500 obs simulated data.csv  # dataset
+├── README.md
+└── notebook.ipynb #main notebook
 ```
 
 ---
