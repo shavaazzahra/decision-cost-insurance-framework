@@ -1,5 +1,5 @@
 # decision-cost-insurance-framework
-Insurance premium pricing framework with asymmetric cost-sensitive decision making — balancing False Positive (customer churn) vs False Negative (underwriting loss) risk through Monte Carlo simulation and tail risk analysis.
+Insurance premium pricing framework with asymmetric cost-sensitive decision making, balancing False Positive (customer churn) vs False Negative (underwriting loss) risk through Monte Carlo simulation and tail risk analysis.
 # asymmetric-cost-premium-decision
 
 Premium pricing decisions are rarely just a statistics problem. This project treats them as a cost problem.
@@ -21,7 +21,7 @@ A p-value alone won't tell you which mistake is cheaper to make. That's what thi
 
 ## What This Does
 
-Starting from 5,500 observations of projected insurance losses, the analysis runs through:
+Starting from 5,500 observations of projected insurance losses (simulated data), the analysis runs through:
 
 1. **EDA** — the loss data is right-skewed and heavy-tailed, so normal distribution assumptions are out from the start
 2. **Distribution fitting** — Gamma, Weibull, and Lognormal are tested via KS-test; Lognormal wins
@@ -74,21 +74,6 @@ The notebook produces:
 - A final recommendation based on tail risk comparison
 
 Actual values depend on the data — run the notebook to see them.
-
----
-
-## How to Run
-
-```bash
-git clone https://github.com/yourusername/asymmetric-cost-premium-decision
-cd asymmetric-cost-premium-decision
-pip install pandas numpy matplotlib scipy scikit-learn openpyxl
-jupyter notebook premium_pricing_framework.ipynb
-```
-
-Make sure the `.xlsx` file is in the same directory as the notebook.
-
----
 
 ## Context
 
